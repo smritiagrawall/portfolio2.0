@@ -1,0 +1,151 @@
+.home {
+  width: 100%;
+  align-items: center;
+  /* font-family: "Arial", sans-serif; */
+  font-family: "Gill Sans", sans-serif;
+  color: #000000;
+overflow-x: hidden;
+}
+
+.about{
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #21325e; */
+  /* background: #161415 url(../images/head3.jpg) no-repeat top center; */
+  color: #f0f0f0;
+}
+
+.about h1 {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 45px;
+  font-family: "Gill Sans", sans-serif;
+  color: #f2a576;
+  height: 50px;
+}
+
+.about .prompt {
+  width: 40%;
+  font-size: 23px;
+  color: #fcf6fc;
+}
+.prompt svg {
+  font-size: 30px;
+  margin: 5px;
+  color: white;
+}
+
+.skills {
+  font-size: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.aa{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  /* background-color: #040213; */
+}
+/* * {box-sizing:border-box} */
+
+
+.paraa{
+  font-size: 23px;
+  color: white;
+}
+
+.image{
+  object-fit: cover;
+}
+.projects1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #040213; */
+  color: #f2a576;
+}
+.projects1 .projectTitle {
+  text-align: center;
+  color: #f2a576;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.proj1{
+  border-radius: 15px;
+  padding-top: 3rem;
+  width: 270px;
+  height: 250px;
+  margin: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0px 5px 15px #c29478;
+  text-align: center;
+}
+.proj1:hover {
+  box-shadow: 0px 3px 15px #f2a576;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.skills .list {
+  list-style: none;
+  width: 60%;
+  font-size: 30px;
+  /* color: white; */
+  color: #f2a576;
+}
+
+.list span {
+  font-size: 20px;
+  color: white;
+}
+.mail{
+  font-size: 19px;
+}
+.heading{
+  color: #f2a576;
+  font-size: 28px;
+}
+@media only screen and (max-width: 600px) {
+  .about h1 {
+    font-size: 35px;
+    color: #f2a576;
+  }
+
+  .about .prompt {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+    color: white;
+  }
+  .para{
+    font-size: 3px;  
+  }
+
+  .skills {
+    text-align: center;
+    color: white;
+  }
+  .list {
+    padding: 0;
+    color: white;
+  }
+
+  .skills h2 {
+    font-size: 5px;
+    color: white;
+  }
+}
