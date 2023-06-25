@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -21,7 +22,30 @@ function Experience() {
             
         }
   return (
-    <motion.div className="experience" variants={pageAnimation} initial="hidden" animate="show">
+    <motion.div
+      className="page1"
+      initial={{
+        scaleX: 0,
+      }}
+      animate={{
+        scaleX: 1,
+      }}
+      exit={{
+        scale: 0,
+      }}
+      transition={{
+        duration: 0.8,
+      }}
+    >
+          <motion.div
+        className="page-body"
+        initial={{
+          y: -150,
+        }}
+        animate={{
+          y: 0,
+        }}
+      >
       <VerticalTimeline lineColor="#3e497a">
         
         <VerticalTimelineElement
@@ -57,9 +81,25 @@ function Experience() {
               Worked on web project called as Know your prep currently hosted and used by many colleges.</p>
     <p>"6 months"</p>
         </VerticalTimelineElement>
-
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+          React Internship
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Etherate labs
+          </h4>
+          <p>Completed my second paid intership at Etherate labs as frontend web developer.
+              Worked on chorme extension designing part called as firefly.</p>
+    <p>"1 month"</p>
+        </VerticalTimelineElement>
         
       </VerticalTimeline>
+    </motion.div>
     </motion.div>
   );
 }

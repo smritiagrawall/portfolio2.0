@@ -24,7 +24,7 @@ function Navbar() {
         </button>
       </div>
       <div className="links">
-        <Link to="/" style={{color: "#f2a576"}}> Home </Link>
+        <Link to="/" style={{color: "#6570d2"}}><h3>Home</h3>  </Link>
         <Link to="/projects"> Projects </Link>
         <Link to="/experience"> Experience </Link>
       </div>
